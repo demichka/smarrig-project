@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: hsla(153, 87%, 27%, 1);
+}
+
 a, a:visited {
     color: hsla(153, 87%, 27%, 1);
 }
@@ -12,6 +16,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     background-color:#CACCB9;
+    line-height: 1.4rem;
 }
 
 img {
@@ -21,8 +26,17 @@ img {
 }
 figure {
     padding: 0;
+    margin-bottom: 30px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 7px 0;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-bottom: 30px;
+}
 header {
     position: fixed;
     top: 0;
@@ -109,7 +123,30 @@ a.logo {
     background-color: hsla(255, 100%, 100%, .35);
 }
 
-.section-2 {
-    height: 500px;
-    background-color: #78BC61;
+.section-color {
+    min-height: 500px;
+    background-color: #FFFACE;
+}
+
+.content-block {
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-family: 'Source Sans Pro', Tahoma, Verdana, sans-serif;
+    font-weight: 300;
+    line-height: 1.4rem;
+    
+}
+.content-block h1 {
+    text-align: center;
+}
+
+.section-green article {
+    color:hsla(228, 16%, 17%, 1);
 }
