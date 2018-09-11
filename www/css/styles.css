@@ -1,0 +1,109 @@
+@import url('grid.css');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+a, a:visited {
+    color: hsla(153, 87%, 27%, 1);
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    background-color:#CACCB9;
+}
+
+img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+figure {
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: hsla(228, 6%, 17%, .9);
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsla(228, 6%, 17%, .3);
+}
+
+.menu {
+     float: right;
+}
+.menu li {
+    float: left;
+    height: 100%;
+}
+
+.menu:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.menu li a {
+    display: block;
+    height: 100%;
+    line-height: 41px;
+    font-size: 1.125rem;
+    color: hsla(105, 40%, 56%, 1);
+    white-space: nowrap;
+    padding: 7px 25px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: hsla(66, 38%, 64%, 1);
+    color: hsla(225, 5%, 17%, 1);
+}
+
+a.logo {
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    line-height: 45px;
+    font-family: 'Noto Serif KR', GEorgia, sans-serif;
+    white-space: nowrap;
+    color: hsla(66, 38%, 64%, 1);
+}
+
+.motto {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.motto h1 {
+    color: hsla(228, 6%, 17%, 1);
+    font-size: 5rem;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Noto Serif KR', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 10px hsla(245, 100%, 100%, .6);;
+}
+
+.parallax {
+    height: 650px;
+    background: url('/img/bg.jpg') fixed center no-repeat;
+    background-size: cover;
+}
+
+.shadow {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    background-color: hsla(255, 100%, 100%, .35);
+}
+
+.section-2 {
+    height: 500px;
+    background-color: #78BC61;
+}
