@@ -61,3 +61,8 @@
 .col-1_2 {
     width: 50%;
 }
+
+.align-middle {
+    float: none;
+    margin: auto;
+}

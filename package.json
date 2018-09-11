@@ -13,5 +13,8 @@
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "smoothscroll-for-websites": "^1.4.6"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1"
   }
 }
