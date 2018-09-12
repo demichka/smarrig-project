@@ -16,7 +16,8 @@ a, a:visited {
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
-    background-color:#CACCB9;
+    background: #CACCB9 url('/img/bg02.jpg')no-repeat fixed center;
+    background-size: cover;
     line-height: 1.4rem;
 }
 
@@ -132,7 +133,7 @@ a.logo {
 
 .section-bg-dark {
     min-height: 500px;
-    background-color: hsla(153, 87%, 27%, 1);
+    background-color: hsla(153, 87%, 27%, .95);
     color: #FFFACE;
     font-weight: 300;
 }
@@ -142,6 +143,7 @@ a.logo {
 
 h1 {
     font-size: 2.5rem;
+    font-family: 'Noto Serif KR', sans-serif;
 }
 
 p {
@@ -155,15 +157,84 @@ p {
     text-align: center;
 }
 
-.section-color-1 article {
+.section-bg-light article {
     color:hsla(228, 16%, 17%, 1);
 }
 
 .suggestion {
     font-size: 1.5rem;
     font-family: 'Roboto', Tahoma, Verdana, sans-serif;
-    line-height: 3rem;
-    list-style-image: url('/img/list-point.png');
-    vertical-align: baseline;
+    line-height: 2.35rem;
+    /* list-style-image: url('/img/list-point.png'); */
+    /* vertical-align: baseline; */
     font-weight: 300;
+}
+
+.suggestion li {
+    background: url('/img/list-point.png')no-repeat left;
+    padding-left: 35px;
+}
+
+.section-bg-pic {
+    
+    min-height: 500px;
+    padding: 0;
+}
+
+.contacts-section {
+    background-color: hsla(28, 41%, 62%, .95);
+    color: hsla(228, 6%, 17%, 1);
+    padding: 80px 15px;
+}
+
+.contacts-section h1 {
+    font-size: 3.5rem;
+}
+
+.contacts-section ul {
+    padding-left: 20px;
+}
+.contacts-section ul li {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+
+}
+
+.contacts-section a {
+    text-decoration: none;
+    color: hsla(228, 6%, 17%, 1);
+}
+
+.contacts-section a:hover {
+    color: hsla(153, 87%, 27%, 1);
+}
+
+.contacts-section .fas {
+    color: hsla(153, 87%, 27%, 1);
+    margin-right: 3px;
+}
+
+.contacts-section .fa-paper-plane {
+    font-size: 85%;
+}
+
+.map {
+    height: 500px;
+}
+.map iframe {
+    width: 100%;
+    min-height: 500px;
+}
+
+footer {
+    background-color: hsla(228, 6%, 17%, 1);
+    padding:50px 0;
+    color: hsla(66, 38%, 64%, 1);;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
