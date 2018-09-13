@@ -37,13 +37,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    font-size: 1.25rem;
+    font-family: 'Open Sans', Tahoma, Verdana, sans-serif;
+    line-height: 2rem;
     margin-bottom: 30px;
+    
 }
 header {
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: hsla(228, 6%, 17%, .7);
+    background-color: hsla(228, 6%, 17%, .8);
     height: 55px;
     width: 100%;
     overflow: hidden;
@@ -88,7 +92,7 @@ a.logo {
     line-height: 50px;
     font-family: 'Noto Serif KR', GEorgia, sans-serif;
     white-space: nowrap;
-    color: hsla(66, 38%, 64%, 1);
+    color: hsla(105, 70%, 46%, 1);
 }
 
 .logo img {
@@ -127,18 +131,16 @@ a.logo {
 }
 
 .section-bg-light {
-    min-height: 500px;
     background-color: #FFFACE;
 }
 
 .section-bg-dark {
-    min-height: 500px;
     background-color: hsla(153, 87%, 27%, .95);
     color: #FFFACE;
     font-weight: 300;
 }
 .content-block {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 h1 {
@@ -146,13 +148,6 @@ h1 {
     font-family: 'Noto Serif KR', sans-serif;
 }
 
-p {
-    font-size: 1.25rem;
-    font-family: 'Raleway', Tahoma, Verdana, sans-serif;
-    /* font-weight: 300; */
-    line-height: 1.6rem;
-    
-}
 .content-block h1 {
     text-align: center;
 }
@@ -176,8 +171,6 @@ p {
 }
 
 .section-bg-pic {
-    
-    min-height: 500px;
     padding: 0;
 }
 
@@ -237,4 +230,28 @@ footer p {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    .col-1_2 {
+        width: 100%;
+    }
+    .align-middle {
+        width: 50%;
+    }
+    img {
+        width: 100%;
+    }
+    .content-block {
+        padding: 50px 0;
+    }
+    .section-bg-pic {
+        padding: 0;
+    }
 }
