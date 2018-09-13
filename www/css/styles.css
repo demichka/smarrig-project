@@ -28,11 +28,18 @@ img {
 }
 figure {
     padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     padding: 7px 0;
     margin-bottom: 50px;
+}
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-family: 'Noto Serif KR', sans-serif;
+
 }
 
 p {
@@ -162,6 +169,9 @@ a.logo {
     background-color: hsla(255, 100%, 100%, .35);
 }
 
+.full-height {
+    height: 100vh;
+}
 .section-bg-light {
     background-color: #FFFACE;
 }
@@ -175,21 +185,22 @@ a.logo {
     padding: 80px 0;
 }
 
-.content-block figure {
-    margin-bottom: 30px;
-}
-
 h1 {
     font-size: 2.5rem;
     font-family: 'Noto Serif KR', sans-serif;
 }
 
-.content-block h1 {
+.content-block h1,
+.content-block h2 {
     text-align: center;
 }
 
 .section-bg-light article {
     color:hsla(228, 16%, 17%, 1);
+}
+
+article figure {
+    margin: 30px;
 }
 
 .suggestion {
@@ -258,7 +269,7 @@ h1 {
 
 footer {
     background-color: hsla(228, 6%, 17%, 1);
-    padding:50px 0;
+    padding:20px 0;
     color: hsla(66, 38%, 64%, 1);
 }
 
@@ -330,3 +341,27 @@ footer p {
     display: block;
     width: 100%;
 }
+
+.top-section {
+    padding-top: 100px;
+}
+
+.light-layout {
+    background-color: hsla(54, 100%, 90%, .7);
+}
+
+.large-style {
+    font-size: 2.1rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.marker-style {
+    font-family: 'Permanent Marker', cursive;
+    text-align: right; 
+    white-space: nowrap;
+    color: hsla(153, 87%, 27%, 1);
+    transform: rotate(7deg);
+}
+

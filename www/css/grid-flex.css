@@ -1,0 +1,50 @@
+.gallery-grid {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-grid figure {
+    width: calc(20% - 20px);
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-grid figure:first-of-type {
+    flex-basis: calc(50% - 20px);
+}
+
+
+
+.gallery-grid figure:nth-child(10) {
+    flex-basis: calc(60% - 20px);
+}
+
+.gallery-grid figcaption {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    background-color: hsla(228, 16%, 17%, .8);
+    color: hsla(105, 60%, 56%, 1);
+    height: 0px;
+    padding: 5px;
+    font-size: .875rem;
+    transition: all ease-in .5s;
+    -webkit-transition: all ease-in .5s;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.gallery-grid figure:hover > figcaption {
+    bottom: 0px;
+    height: 40px;
+}
+
+.gallery-grid figure img {
+    display: block;
+    width: 100%;
+}
