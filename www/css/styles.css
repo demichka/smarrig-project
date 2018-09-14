@@ -1,5 +1,5 @@
 @import url('grid.css');
-
+/* @import url('/css/fonts/fa-solid-900.ttf'); */
 *, *:after, *:before {
     box-sizing: border-box;
 }
@@ -216,15 +216,15 @@ article figure {
 .suggestion {
     font-size: 1.5rem;
     font-family: 'Roboto', Tahoma, Verdana, sans-serif;
-    line-height: 2.35rem;
-    /* list-style-image: url('/img/list-point.png'); */
-    /* vertical-align: baseline; */
+    line-height: 2.5rem;
     font-weight: 300;
 }
 
-.suggestion li {
-    background: url('/img/list-point.png')no-repeat left;
-    padding-left: 35px;
+.suggestion li .fas {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 80%;
 }
 
 .section-bg-pic {
@@ -369,10 +369,10 @@ footer p {
 }
 
 .marker-style {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 3rem;
     font-family: 'Permanent Marker', cursive;
-    text-align: right; 
+    /* text-align: right;  */
     white-space: nowrap;
     color: hsla(153, 87%, 27%, 1);
     transform: rotate(7deg);
@@ -386,11 +386,73 @@ footer p {
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding: 50px 15px;
 }
 
+/* .lunch-list {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+} */
+
 .lunch-list ul {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.4rem;
-    list-style-type: circle;
-    line-height: 2.5rem;
+    list-style-type: none;
+    /* flex: 0; */
+}
+
+.lunch-list ul li {
+    margin-bottom: 15px;
+    line-height: 2rem;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+.lunch-list ul li .fas {
+    display: inline-block;
+   font-size: 1.2rem;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   vertical-align: bottom;
+  }
+
+.lunch-menu p {
+    border-top: 0.5px solid hsla(225, 5%, 17%, 1);
+    border-bottom: 0.5px solid hsla(225, 5%, 17%, 1);
+    margin: 5px 0;
+    padding: 5px 7px;
+}
+
+small {
+    font-size: .875rem;
+    font-style: oblique;
+}
+
+hr {
+    border: 0;
+    height: .5px;
+    background-color: hsla(225, 5%, 17%, .6);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    
+    text-align: center;
+    background-color: hsla(153, 100%, 30%, 1);
+    color: hsla(225, 100%, 100%, 1);
+    border: 1px solid hsla(153, 100%, 30%, 1);
+    box-shadow: 0;
+    font-size: 1.6rem;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin:25px auto 0 auto;
+    cursor: pointer;
+}
+
+.btn:hover {
+    
+    background-color: hsla(153, 87%, 27%, 1);
+    color: hsla(225, 95%, 100%, 1);
 }
