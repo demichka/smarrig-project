@@ -19,6 +19,16 @@ body {
     background: #CACCB9 url('/img/bg02.jpg')no-repeat fixed center;
     background-size: cover;
     line-height: 1.4rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    -ms-flex: 1;
 }
 
 img {
@@ -348,6 +358,7 @@ footer p {
 
 .light-layout {
     background-color: hsla(54, 100%, 90%, .7);
+    min-height: calc(100vh - 72px);
 }
 
 .large-style {
@@ -358,6 +369,8 @@ footer p {
 }
 
 .marker-style {
+    font-size: 3rem;
+    line-height: 3rem;
     font-family: 'Permanent Marker', cursive;
     text-align: right; 
     white-space: nowrap;
@@ -365,3 +378,19 @@ footer p {
     transform: rotate(7deg);
 }
 
+.lunch-menu {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lunch-list ul {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    list-style-type: circle;
+    line-height: 2.5rem;
+}
