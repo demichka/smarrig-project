@@ -231,12 +231,17 @@ article figure {
     padding: 0;
 }
 
-.contacts-section {
+.layout-mocco {
     background-color: hsla(28, 41%, 62%, .95);
     color: hsla(228, 6%, 17%, 1);
-    padding: 80px 15px;
+    /* padding: 80px 15px; */
+
+    
 }
 
+.content-block.contacts-section {
+    padding-bottom: 0;
+}
 .contacts-section h1 {
     font-size: 3.5rem;
 }
@@ -270,11 +275,12 @@ article figure {
 }
 
 .map {
-    height: 500px;
+    margin-top: 50px;
+    height: 550px;
 }
 .map iframe {
     width: 100%;
-    min-height: 500px;
+    height: 100%;
 }
 
 footer {
@@ -357,7 +363,7 @@ footer p {
 }
 
 .light-layout {
-    background-color: hsla(54, 100%, 90%, .7);
+    background-color: hsla(54, 100%, 90%, .8);
     min-height: calc(100vh - 72px);
 }
 
