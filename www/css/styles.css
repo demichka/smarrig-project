@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     font-size: 2.8rem;
     margin-bottom: 40px;
-    font-family: 'Noto Serif KR', sans-serif;
+    font-family: 'Noto Serif JP', sans-serif;
 
 }
 
@@ -64,7 +64,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: hsla(228, 6%, 17%, .8);
-    height: 55px;
+    height: 65px;
     width: 100%;
     box-shadow: 1px 1px 8px hsla(228, 6%, 17%, .4);
 }
@@ -95,9 +95,9 @@ header {
 
 .menu > li > a {
     display: block;
-    line-height: 40px;
-    height: 55px;
-    font-size: 1.125rem;
+    line-height: 50px;
+    height: 65px;
+    font-size: 1.5rem;
     color: hsla(105, 40%, 56%, 1);
     white-space: nowrap;
     padding: 7px 25px;
@@ -107,7 +107,7 @@ header {
 
 .menu li ul li a {
     display: block;
-    line-height: 30px;
+    line-height: 50px;
     font-size: 1rem;
     padding: 7px;
     text-decoration: none;
@@ -137,9 +137,9 @@ header {
 a.logo {
     text-decoration: none;
     display: block;
-    font-size: 1.8rem;
-    line-height: 50px;
-    font-family: 'Noto Serif KR', GEorgia, sans-serif;
+    font-size: 2.1rem;
+    line-height: 60px;
+    font-family: 'Noto Serif JP', GEorgia, sans-serif;
     white-space: nowrap;
     color: hsla(105, 70%, 46%, 1);
 }
@@ -152,7 +152,7 @@ a.logo {
 
 .motto {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
 }
 
@@ -161,9 +161,10 @@ a.logo {
     font-size: 5rem;
     white-space: nowrap;
     text-align: center;
-    font-family: 'Noto Serif KR', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Serif JP', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    text-shadow: 0 0 10px hsla(245, 100%, 100%, .6);;
+    text-shadow: 0 0 10px hsla(245, 100%, 100%, .6);
+    line-height: 3.5rem;
 }
 
 .banner {
@@ -197,7 +198,7 @@ a.logo {
 
 h1 {
     font-size: 2.5rem;
-    font-family: 'Noto Serif KR', sans-serif;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 .content-block h1,
@@ -209,15 +210,17 @@ h1 {
     color:hsla(228, 16%, 17%, 1);
 }
 
-article figure {
-    margin: 30px;
-}
+
 
 .suggestion {
     font-size: 1.5rem;
     font-family: 'Roboto', Tahoma, Verdana, sans-serif;
-    line-height: 2.5rem;
+    line-height: 2rem;
     font-weight: 300;
+}
+
+.suggestion li {
+    margin-bottom: 15px;
 }
 
 .suggestion li .fas {
@@ -234,9 +237,6 @@ article figure {
 .layout-mocco {
     background-color: hsla(28, 41%, 62%, .95);
     color: hsla(228, 6%, 17%, 1);
-    /* padding: 80px 15px; */
-
-    
 }
 
 .content-block.contacts-section {
@@ -395,16 +395,11 @@ footer p {
     padding: 50px 15px;
 }
 
-/* .lunch-list {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-} */
+
 
 .lunch-list ul {
     list-style-type: none;
-    /* flex: 0; */
+    margin-bottom: 40px;
 }
 
 .lunch-list ul li {
@@ -461,4 +456,10 @@ hr {
     
     background-color: hsla(153, 87%, 27%, 1);
     color: hsla(225, 95%, 100%, 1);
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
