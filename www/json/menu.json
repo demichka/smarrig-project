@@ -1,0 +1,166 @@
+{
+  "whole-week": {
+    "sv": [
+      {
+        "name": "Veckans sallad",
+        "desc": "Blandad buffelmozzarella, körsbärstomater, rödlök, grillade grönsaker, brödkrutonger, pinjekärnor, samt basilikaolja."
+      }
+    ],
+    "en": [
+      {
+        "name": "Salad of the week",
+        "desc": "Mixed buffalo mozzarella, cherry tomatoes, red onions, grilled vegetables, bread crutons, pine nut seed and basil oil."
+      }
+    ]
+  },
+  "monday": {
+    "sv": [ 
+      {
+        "name": "Strozzapreti med fläskkött",
+        "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli."
+      },
+      {
+        "name": "Penne med zucchini",
+        "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino."
+      },
+      {
+        "name": "Ugnsbakat Kalkonbröst",
+        "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin."
+      }
+    ],
+    "en": [ 
+      {
+        "name": "Strozzapreti with pork",
+        "desc": "Strozzapreti med shredded pork, tomatoes and broccoli."
+      },
+      {
+        "name": "Penne with zucchini",
+        "desc": "Penne with zucchini, paprika, aubergin, tomatoes, cream and pecorino."
+      },
+      {
+        "name": "Baked turkey breast",
+        "desc": "Baked turkey breast served with herb roested potatoes, and a sauce of semi dried tomates and white wine."
+      }
+    ]
+  },
+  "tuesday": {
+    "sv": [
+      {
+        "name": "Karljohanssvampfylld ravioli",
+        "desc": "Karljohanssvampfylld ravioli med smör, salvia och grana padano."
+      },
+      {
+        "name": "Penne alla Carbonara",
+        "desc": "Penne med carbonarasås (bacon)."
+      },
+      {
+        "name": "Dagens fisk",
+        "desc": "Dagens fisk enligt tillgång."
+      }
+    ],
+    "en": [
+      {
+        "name": "Porcini filled ravioli",
+        "desc": "Porcini filled ravioli with butter, sage and grana padano."
+      },
+      {
+        "name": "Penne alla Carbonara",
+        "desc": "Penne with carbonara sauce (bacon)."
+      },
+      {
+        "name": "Today's Catch",
+        "desc": "Fish from the local market, depending on supply."
+      }
+    ]
+  },
+  "wednesday": {
+    "sv": [
+      {
+        "name": "Fusilli alla Bolognese",
+        "desc": "Fusilli med köttfärssås (nötkött)."
+      },
+      {
+        "name": "Basilikasedani",
+        "desc": "Sedani med basilikapesto, haricots-verts och grädde."
+      },
+      {
+        "name": "Helstekt fläskfilé",
+        "desc": "Helstekt fläskfilé, serveras med potatisgratäng, grönsaker och rödvinssås." 
+      }
+    ],
+    "en": [
+      {
+        "name": "Fusilli alla Bolognese",
+        "desc": "Fusilli with minced beef."
+      },
+      {
+        "name": "Basil sedani",
+        "desc": "Sedani with basil peso, haricots-verts and cream."
+      },
+      {
+        "name": "Fillet of pork",
+        "desc": "Fillet of pork, served with potato gratin vegetables and a red wine sauce." 
+      }
+    ]
+  },
+  "thursday": {
+    "sv": [
+      {
+        "name": "Cappelletti",
+        "desc": "Cappelletti med pancetta, champinjon, tomat och grädde." 
+      },
+      {
+        "name": "Purjolökspenne",
+        "desc": "Penne med purjolök, broccoli, semitorkade tomater och vitvinssås."
+      },
+      {
+        "name": "Dagens fisk",
+        "desc": "Dagens fisk enligt tillgång."
+      }
+    ],
+    "en": [
+      {
+        "name": "Cappelletti",
+        "desc": "Cappelletti served with pancetta, mushrooms, tomatoes and cream." 
+      },
+      {
+        "name": "Penne with leeks",
+        "desc": "Penne with leeks, broccoli, semi dried tomatoes and a white wine sauce."
+      },
+      {
+        "name": "Today's Catch",
+        "desc": "Fish from the local market, depending on supply."
+      }
+    ]
+  },
+  "friday": {
+    "sv": [
+      {
+        "name": "Rigatoni alla Norma",
+        "desc": "Rigatoni alla Norma – med aubergin, tomat, basilika och ricottasallad."
+      },
+      {
+        "name": "Kycklingstrozzapreti",
+        "desc": "Strozzapreti med kyckling, tomat, pesto och grädde." 
+      },
+      {
+        "name": "Lammfärsbiffar",
+        "desc": "Lammfärsbiffar med bakade rotfrukter, linser och timjansky."
+      }
+    ],
+    "en": [
+      {
+        "name": "Rigatoni alla Norma",
+        "desc": "Rigatoni alla Norma – with aubergine, tomatoes, basil och a ricotta salad."
+      },
+      {
+        "name": "Strozzapreti with chicken",
+        "desc": "Strozzapreti with chicken, tomatoes, pesto och cream." 
+      },
+      {
+        "name": "Minced mutton beefs",
+        "desc": "Minced mutton beefs with baked root vegetables, lentils och thyme gravy."
+      }
+    ]
+  }
+}
