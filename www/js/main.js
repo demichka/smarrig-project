@@ -5,7 +5,7 @@ function loadWeekLunch(weekLunch) {
     let d = new Date();
     let dayOfWeek = d.getDay();
     let ul = $('<ul/>');
-    let i = dayOfWeek + 1;
+    let i = dayOfWeek;
     console.log(dayOfWeek);
    
     let day = weekLunch[i];
@@ -15,7 +15,7 @@ function loadWeekLunch(weekLunch) {
     
 
     console.log(i);
-    console.log(weekLunch[i]);
+    console.log(weekLunch);
     
         for (let item in day) {
             let food = day[item];
@@ -30,11 +30,11 @@ function loadWeekLunch(weekLunch) {
         }
 
     let everyDay = weekLunch[0];
-    let pSmall = $('<p/>').append('<small/>');
+    let pSmall = $('<p/>');
     for (let el in everyDay) {
         let k = everyDay[el];
         for (let z in k) {
-            pSmall.append(k[z].name);
+            pSmall.append('<small>' + k[z].name + '</small>');
         }
     }
     
