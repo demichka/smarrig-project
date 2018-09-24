@@ -8,42 +8,48 @@
     },
 
     {
-        "monday": [
-            {
-                "name": "Vegan pumpkin soup with onions",
-                "image": "/img/image02.jpg"
+        "dayOfWeek": {
+            "monday": {
+                "items": [
+                    {
+                        "name": "Vegan pumpkin soup with onions",
+                        "image": "/img/image02.jpg"
+                    },
+                
+                    {
+                        "name": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
+                        "image": " "
+                    },
+                
+                    {
+                        "name": "Gräddig laxpanna med kantareller samt kokt potatis",
+                        "image": " "
+                    }
+                ]
             },
-        
-            {
-                "name": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
-                "image": " "
-            },
-        
-            {
-                "name": "Gräddig laxpanna med kantareller samt kokt potatis",
-                "image": " "
+
+            "tuesday": {
+                "items": [
+                    {
+                        "name": "tues1",
+                        "image": "/img/image02.jpg"
+                    },
+                
+                    {
+                        "name": "tues2",
+                        "image": " "
+                    },
+                
+                    {
+                        "name": "tues3",
+                        "image": " "
+                    }
+                ]
             }
-        ]
+        }
+        
     },
 
-    {
-        "tuesday": [
-            {
-                "name": "tues1",
-                "image": "/img/image02.jpg"
-            },
-        
-            {
-                "name": "tues2",
-                "image": " "
-            },
-        
-            {
-                "name": "tues3",
-                "image": " "
-            }
-        ]
-    },
 
     {
         "wednesday": [
