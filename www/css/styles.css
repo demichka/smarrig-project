@@ -472,7 +472,29 @@ hr {
     overflow: hidden;
 }
 
+.switch-lang li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 4px;
+    background-color: hsla(105, 40%, 26%, 1);
+    color: #fff;
+    
+}
 
+.switch-lang li.off {
+    background-color: #666;
+    cursor: pointer;
+}
+
+.switch-lang li:hover {
+    background-color: #555;
+}
+
+.switch-lang li.on {
+    background-color: hsla(153, 87%, 27%, 1);
+    cursor: default;
+}
 
 
 

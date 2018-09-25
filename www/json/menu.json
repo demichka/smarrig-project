@@ -17,15 +17,20 @@
     "sv": [ 
       {
         "name": "Strozzapreti med fläskkött",
-        "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli."
+        "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli.",
+        "image": "/img/image02.jpg"
       },
       {
         "name": "Penne med zucchini",
-        "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino."
+        "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino.",
+        "image": "/img/image03.jpg"
+        
       },
       {
         "name": "Ugnsbakat Kalkonbröst",
-        "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin."
+        "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin.",
+        "image": "/img/image04.jpg"
+
       }
     ],
     "en": [ 

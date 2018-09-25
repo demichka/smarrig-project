@@ -1,0 +1,83 @@
+[
+    {
+        "nameOfWeek": "whole-week",
+        "sv": [
+            {
+                "name": "Svenska mat",
+                "desc": "Desc svenska mat"
+            }
+        ],
+        "en": [
+            {
+                "name": "English meal",
+                "desc": "Desc english meal"
+            }
+        ]
+    },
+
+    {
+        "nameOfWeek": "monday",
+        "sv": [
+            {
+                "name": "Vegansk pumpa soup med lök",
+                "image": "/img/image02.jpg"
+            },
+        
+            {
+                "name": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
+                "image": "/img/image03.jpg"
+            },
+        
+            {
+                "name": "Gräddig laxpanna med kantareller samt kokt potatis",
+                "image": "/img/image04.jpg"
+            }
+        ],
+        "en": [
+            {
+                "name": "Vegan pumpkin soup with onions",
+                "image": "/img/image02.jpg"
+            }
+        ]
+    },
+
+    {
+        "nameOfWeek": "tuesday",
+        "sv": [ 
+            {
+              "name": "Strozzapreti med fläskkött",
+              "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli.",
+              "image": "/img/image02.jpg"
+            },
+            {
+              "name": "Penne med zucchini",
+              "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino.",
+              "image": "/img/image03.jpg"
+              
+            },
+            {
+              "name": "Ugnsbakat Kalkonbröst",
+              "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin.",
+              "image": "/img/image04.jpg"
+      
+            }
+        ],
+        "en": [ 
+            {
+              "name": "Strozzapreti with pork",
+              "desc": "Strozzapreti med shredded pork, tomatoes and broccoli.",
+              "image": "/img/image04.jpg"
+            },
+            {
+              "name": "Penne with zucchini",
+              "desc": "Penne with zucchini, paprika, aubergin, tomatoes, cream and pecorino.",
+              "image": "/img/image06.jpg"
+            },
+            {
+              "name": "Baked turkey breast",
+              "desc": "Baked turkey breast served with herb roested potatoes, and a sauce of semi dried tomates and white wine.",
+              "image": "/img/image08.jpg"
+            }
+          ]
+    }
+]
