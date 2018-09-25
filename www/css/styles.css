@@ -13,6 +13,7 @@ a, a:visited {
     color: hsla(153, 87%, 27%, 1);
 }
 
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
@@ -467,10 +468,15 @@ hr {
 .week-lunch-img img {
     width: 100%;
     display: block;
+    transition: all ease-in-out .5s;
 }
 
 .week-lunch-img figure {
     overflow: hidden;
+}
+
+.week-lunch-img figure:hover img {
+    opacity: 0.8;
 }
 
 .week-lunch-img figcaption {
@@ -478,9 +484,9 @@ hr {
     bottom: -100px;
     width: 100%;
     background-color: hsla(228, 16%, 17%, .8);
-    color: hsla(105, 60%, 56%, 1);
-    /* height: 0px; */
-    padding: 5px 7px;
+    /* color: hsla(105, 60%, 56%, 1); */
+    color: #eee;
+    padding: 7px;
     font-size: .875rem;
     transition: all ease-in .5s;
     -webkit-transition: all ease-in .5s;
@@ -489,7 +495,6 @@ hr {
 
 .week-lunch-img figure:hover > figcaption {
     bottom: 0px;
-    /* height: 40px; */
 }
 
 

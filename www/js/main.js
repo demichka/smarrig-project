@@ -41,7 +41,9 @@ $(document).ready(function () {
             slideBy: 1,
             margin: 10,
             autoplay: true,
-            autoplayTimeout: 3000
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            lazyLoad: true
         })
     }
 

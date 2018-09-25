@@ -9,7 +9,7 @@
             ],
             "en": [
                 {
-                    "name": "Daily lunch 11-14. Including sallade, bread, soda, coffee, cookies. Proce 85 SEK" 
+                    "name": "Daily lunch 11-14. Including salad, bread, soda, coffee, cookies. Price 85 SEK" 
                 }
             ]
         }
@@ -21,23 +21,39 @@
             "sv": [
                 {
                     "name": "Vegansk pumpa soup med lök",
-                    "image": "/img/image02.jpg"
+                    "desc": "Vegansk pumpa soup med lök",
+                    "image": "/img/image02.jpg"  
                 },
             
                 {
                     "name": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
+                    "desc": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
                     "image": "/img/image03.jpg"
                 },
             
                 {
                     "name": "Gräddig laxpanna med kantareller samt kokt potatis",
+                    "desc": "Gräddig laxpanna med kantareller samt kokt potatis",
                     "image": "/img/image04.jpg"
                 }
             ],
             "en": [
                 {
                     "name": "Vegan pumpkin soup with onions",
+                    "desc": "Vegan pumpkin soup with onions",
                     "image": "/img/image02.jpg"
+                },
+
+                {
+                    "name": "Grilled pork fillet with apple sauce and crispy chopped potatoes",
+                    "desc": "Grilled pork fillet with apple sauce and crispy chopped potatoes",
+                    "image": "/img/image03.jpg"                    
+                },
+
+                {
+                    "name": "Creamy salmon pan with bacon potatoes and boiled potatoes",
+                    "desc": "Creamy salmon pan with bacon potatoes and boiled potatoes",
+                    "image": "/img/image07.jpg"                    
                 }
             ]
         }

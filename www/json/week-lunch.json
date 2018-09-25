@@ -18,7 +18,7 @@
         "monday": {
             "sv": [
                 {
-                    "name": "Vegansk pumpa soup med lök",
+                    "name": "Vegansk pumpa soup med onions",
                     "image": "/img/image02.jpg"
                 },
             
@@ -34,38 +34,29 @@
             ],
             "en": [
                 {
-                    "name": "Vegan pumpkin soup with onions",
-                    "image": "/img/image02.jpg"
+                    "name": "Vegan pumpkin soup with onions"
                 }
             ]
         }        
     },
 
     {
-        "tuesday": {
-            "sv": [
-                {
-                    "name": "Vegansk pumpa soup med lök",
-                    "image": "/img/image02.jpg"
-                },
-            
-                {
-                    "name": "Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis",
-                    "image": "/img/image03.jpg"
-                },
-            
-                {
-                    "name": "Gräddig laxpanna med kantareller samt kokt potatis",
-                    "image": "/img/image04.jpg"
-                }
-            ],
-            "en": [
-                {
-                    "name": "Vegan pumpkin soup with onions",
-                    "image": "/img/image02.jpg"
-                }
-            ]
-        }
+        "tuesday": [
+            {
+                "name": "tues1",
+                "image": "/img/image02.jpg"
+            },
+        
+            {
+                "name": "tues2",
+                "image": " "
+            },
+        
+            {
+                "name": "tues3",
+                "image": " "
+            }
+        ]
     },
 
     {
