@@ -4,7 +4,7 @@ $(document).ready(function () {
     let switchLanguageButton = $('.switch-lang li');
     let switchSwedish = $('.switch-swedish');
     let switchEnglish = $('.switch-english');
-
+    // let lang = '';
     let carousel = $('.owl-carousel');
 
 
@@ -48,8 +48,8 @@ $(document).ready(function () {
 
 
     function loadWeekLunch(weekLunch) {
-
-        checkLanguage();
+        lang = 'sv';
+        showMenu(lang);
         runOwlCarousel();
         setDayName();
 
@@ -59,84 +59,66 @@ $(document).ready(function () {
             $('.lunch-list').empty();
             $('.week-lunch-img').empty();
             carousel.trigger('destroy.owl.carousel');
-            checkLanguage();
+            checkingLanguage();
+            showMenu();
             runOwlCarousel();
+            console.log(lang);
         });
 
 
 
 
-        function checkLanguage() {
+        function checkingLanguage() {
+            if (switchSwedish.hasClass('on')) {
+                lang = 'sv';
+            } else if (switchEnglish.hasClass('on')) {
+                lang = 'en';
+            }
+            return lang;
+        }
 
+        function showMenu(language) {
+            language = lang;
+            console.log(language);
             let ul = $('<ul/>');
             let i = dayOfWeek;
             let currentDay = weekLunch[i];
 
-            if (switchSwedish.hasClass('on')) {
-                for (item in currentDay.sv) {
-                    console.log(currentDay.sv[item].name);
-                    let meal = currentDay.sv[item];
-                    let title = meal.name;
-                    let li = $('<li/>');
-                    li.append('<i class="fas fa-utensil-spoon"></i>');
-                    li.append(title);
-                    ul.append(li);
-                    let mealImage = $('<figure/>').append($('<img/>')).append($('<figcaption/>'));
-                    $('.week-lunch-img').append(mealImage);
-                    mealImage.find('img').attr('src', meal.image);
 
-                }
-                runOwlCarousel();
-
-            } else if (switchEnglish.hasClass('on')) {
-                for (item in currentDay.en) {
-                    console.log(currentDay.en[item].name);
-                    let meal = currentDay.en[item];
-                    let title = meal.name;
-                    let li = $('<li/>');
-                    li.append('<i class="fas fa-utensil-spoon"></i>');
-                    li.append(title);
-                    ul.append(li);
-                    let mealImage = $('<figure/>').append($('<img/>')).append($('<figcaption/>'));
-                    $('.week-lunch-img').append(mealImage);
-                    mealImage.find('img').attr('src', meal.image);
-                }
-                runOwlCarousel();
+            for (item in currentDay.lang[language]) {
+                console.log(currentDay.lang[language][item].name);
+                let meal = currentDay.lang[language][item];
+                let title = meal.name;
+                let li = $('<li/>');
+                li.append('<i class="fas fa-utensil-spoon"></i>');
+                li.append(title);
+                ul.append(li);
+                let mealImage = $('<figure/>').append($('<img/>')).append($('<figcaption/>'));
+                $('.week-lunch-img').append(mealImage);
+                mealImage.find('img').attr('src', meal.image);
 
             }
 
+            let everyDay = weekLunch[0];
+            let pSmall = $('<p/>');
+            for (let el in everyDay.lang[language]) {
+                let everyDayMeal = everyDay.lang[language][el];
+                pSmall.append('<small>' + everyDayMeal.name + '</small>');
+            }
+            runOwlCarousel();
+
             let btn = $('<button/>').attr('type', 'button').addClass('btn').html('Beställa');
-            
+
             $('.lunch-list').append(ul);
-            // $('.lunch-list').append(pSmall);
+            $('.lunch-list').append(pSmall);
             $('.lunch-list').append(btn);
         }
 
 
 
 
-        // for (let item in day) {
-        //     let food = day[item];
-        //     for (let j in food) {
-        //         let title = food[j].name;
-        //         let li = $('<li/>');
-        //         li.append('<i class="fas fa-utensil-spoon"></i>');
-        //         li.append(title);
-        //         ul.append(li);
-        //         let mealImage = $('<figure/>').append($('<img/>')).append($('<figcaption/>'));
-        //         $('.week-lunch-img').append(mealImage);
-        //         mealImage.find('img').attr('src', food[j].image);
-        //     }
-        // }
 
-        let everyDay = weekLunch[0];
-        let pSmall = $('<p/>');
-        for (let el in everyDay) {
-            let k = everyDay[el];
-            for (let z in k) {
-                pSmall.append('<small>' + k[z].name + '</small>');
-            }
-        }
+
     }
 
 });
