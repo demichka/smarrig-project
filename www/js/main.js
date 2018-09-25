@@ -4,7 +4,6 @@ $(document).ready(function () {
     let switchLanguageButton = $('.switch-lang li');
     let switchSwedish = $('.switch-swedish');
     let switchEnglish = $('.switch-english');
-    // let lang = '';
     let carousel = $('.owl-carousel');
 
 
@@ -89,6 +88,7 @@ $(document).ready(function () {
                 console.log(currentDay.lang[language][item].name);
                 let meal = currentDay.lang[language][item];
                 let title = meal.name;
+                let mealDesc = meal.desc;
                 let li = $('<li/>');
                 li.append('<i class="fas fa-utensil-spoon"></i>');
                 li.append(title);
@@ -96,6 +96,7 @@ $(document).ready(function () {
                 let mealImage = $('<figure/>').append($('<img/>')).append($('<figcaption/>'));
                 $('.week-lunch-img').append(mealImage);
                 mealImage.find('img').attr('src', meal.image);
+                mealImage.find('figcaption').append(mealDesc);
 
             }
 
@@ -107,7 +108,7 @@ $(document).ready(function () {
             }
             runOwlCarousel();
 
-            let btn = $('<button/>').attr('type', 'button').addClass('btn').html('Beställa');
+            let btn = $('<button/>').attr('type', 'button').addClass('btn').html('Order');
 
             $('.lunch-list').append(ul);
             $('.lunch-list').append(pSmall);

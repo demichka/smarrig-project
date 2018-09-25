@@ -4,14 +4,12 @@
         "lang": {
             "sv": [
                 {
-                    "name": "Svenska mat",
-                    "desc": "Desc svenska mat"
+                    "name": "Dagens lunch kl. 11-14. Inkl sallad, smör, bröd, dryck, kaffe, kaka. Pris 85 kr"
                 }
             ],
             "en": [
                 {
-                    "name": "English meal",
-                    "desc": "Desc english meal"
+                    "name": "Daily lunch 11-14. Including sallade, bread, soda, coffee, cookies. Proce 85 SEK" 
                 }
             ]
         }
