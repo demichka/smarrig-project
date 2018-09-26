@@ -85,6 +85,8 @@
 									</div>
 								</div>
 							</div>
+							<button class="btn order-btn">Order</button>
+
 						</div>
 					</div>
 				</div>
@@ -97,25 +99,26 @@
 		</div>
 	</footer>
 	<div class="fade"></div>
-	<div class="modal">
+	<div class="modal" id="form-modal">
 		<div class="container">
 			<div class="modal-inner">
 				<span class="close"><i class="fas fa-times"></i></span>
-				<h3>Modal heading</h3>
-				<form action="" method="POST" id="order-form">
+				<h3>Order your lunch here</h3>
+				<form action=""  method="post" id="order-form" class="forms">
 					<div class="form-group">
 						<label for="namef">Your name: </label>
 						<input type="text" id="namef" name="namef" placeholder="Enter your name" required>
 					</div>
 					<div class="form-group">
 							<label for="emailf">Your email: </label>
-							<input type="text" id="emailf" name="emailf" placeholder="Enter your name" required>
+							<input type="text" id="emailf" name="emailf" placeholder="Enter your email" required>
 						</div>
 						<p>Select meal to order:</p>
-					<div class="form-group"><input type="radio" name="select-meal" id="meal-1"><label for="meal-1">meal-1</label></div>
-					<div class="form-group"><input type="radio" name="select-meal" id="meal-2"><label for="meal-2">meal-2</label></div>
-					<div class="form-group"><input type="radio" name="select-meal" id="meal-3"><label for="meal-3">meal-3</label></div>
+						<div class="meal-list-to-order">
 
+						</div>
+						<button class="btn" id="get-order-btn">Submit</button>
+						<button type="reset" class="btn btn-close">Cancel</button>
 				</form>
 			</div>
 		</div>

@@ -83,12 +83,12 @@ $(document).ready(function () {
             $('.day-name').empty();
             $('.text-place').empty();
             $('.heading').empty();
+            $('.meal-list-to-order').empty();
             carousel.trigger('destroy.owl.carousel');
             checkingLanguage();
             showMenu();
             runOwlCarousel();
             setDayName();
-            addOrderBtn();
         });
 
 
@@ -108,7 +108,7 @@ $(document).ready(function () {
             let ul = $('<ul/>');
             let i = dayOfWeek;
             let currentDay = weekLunch[i];
-
+            let mealListToOrder = $('.meal-list-to-order');
 
             for (item in currentDay.lang[language]) {
                 let meal = currentDay.lang[language][item];
@@ -122,7 +122,12 @@ $(document).ready(function () {
                 $('.week-lunch-img').append(mealImage);
                 mealImage.find('img').attr('src', meal.image);
                 mealImage.find('figcaption').append(mealDesc);
-
+                mealListToOrder
+                    .append($('<div class="form-group"/>')
+                        .append($('<input type="radio" name="select-meal"/>').attr('id', title).attr('value', title))
+                        .append($('<label/>')
+                            .append(title).attr('for', title))
+                );
             }
 
             let everyDay = weekLunch[0];
@@ -133,32 +138,62 @@ $(document).ready(function () {
                 $('.text-place').append(everyDayInfo.text);
                 $('.heading').append(everyDayInfo.title);
             }
+
             runOwlCarousel();
-
-
-
             $('.lunch-list').append(ul);
             $('.lunch-list').append(pSmall);
-
         }
-
-
-
     }
 
-    function addOrderBtn() {
-        let btn = $('<button/>').attr('type', 'button').addClass('order-btn btn').html('Order');
-        $('.lunch-list').append(btn);
-    }    
 
-    // addOrderBtn();
     let orderBtn = $('.order-btn');
     orderBtn.click(function () {
         $('.modal').fadeIn();
         $('.fade').fadeIn();
     });
 
+    
+
+
+    function getOrder() {
+        let summary = {};
+        summary.name = $('#namef').val();
+        summary.email = $('#emailf').val();
+        summary.meal = $('input:checked').val();
+        let summarizeP = $('<p/>');
+        summarizeP.append(
+            'Hej, ' + summary.name + '!' +
+            '<br/>' + 'We send your order to ' + summary.email + '.' +
+            '<br/>' + 'You ordered ' + summary.meal + ',' +
+            '<br/>' + 'Pick it up and enjoy your lunch!');
+        $('#form-modal').fadeOut();
+        let modalSum = $('<div class="modal" id="modal-answer"/>').append($('<div class="container"/>').append($('<div class="modal-inner"/>').append($('<span class="close"/>').append($('<i class="fas fa-times"/>'))).append($('<h3/>'))));
+        $('body').append(modalSum);
+        $('#modal-answer').append(summarizeP);
+        $('.close').click(function () {
+            $(this).parents('.modal').fadeOut();
+            $('.fade').fadeOut();
+            $('form')[0].reset();
+            $('#modal-answer').remove();
+        });
+    }
+
+    $('#get-order-btn').click(getOrder);
+
+
     $('.close').click(function () {
+        $(this).parents('.modal').fadeOut();
+        $('.fade').fadeOut();
+        $('form')[0].reset();
+    });
+
+    $('.fade').click(function () {
+        $(this).fadeOut();
+        $('.modal').fadeOut();
+        $('form')[0].reset();
+    });
+
+    $('.btn:reset').click(function () {
         $(this).parents('.modal').fadeOut();
         $('.fade').fadeOut();
     });

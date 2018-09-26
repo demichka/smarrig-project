@@ -460,9 +460,9 @@ hr {
 }
 
 .order-btn {
-    position: absolute;
-    bottom: -100px;
     width: 200px;
+    float: left;
+    margin: 0 0 30px 15px;
 }
 .flex-grid {
     display: flex;
@@ -533,7 +533,7 @@ hr {
     top: 10%;
     left: 30%;
     width: 600px;
-    height: 500px;
+    /* height: 500px; */
     z-index: 3000;
     background-color: #eee;
     border: 1px solid #999;
@@ -568,7 +568,18 @@ hr {
     margin-bottom: 20px;
 }
 
+.forms .btn {
+    display: inline-block;
+    width: 200px;
+}
 
+.btn[type='reset'] {
+    background-color: #999;
+    border-color: #999;
+}
+.btn[type='reset']:hover {
+    background-color: #888;
+}
 
 .form-group input[type=radio] {
     width: 50px;
