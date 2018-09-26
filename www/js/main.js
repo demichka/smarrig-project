@@ -5,6 +5,7 @@ $(document).ready(function () {
     let switchSwedish = $('.switch-swedish');
     let switchEnglish = $('.switch-english');
     let carousel = $('.owl-carousel');
+    let lang = 'sv';
 
 
 
@@ -49,7 +50,6 @@ $(document).ready(function () {
 
 
     function loadWeekLunch(weekLunch) {
-        lang = 'sv';
         showMenu(lang);
         runOwlCarousel();
         setDayName();
