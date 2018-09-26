@@ -7,9 +7,11 @@
 	<link rel="shortcut icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700|Noto+Serif+KR|Open+Sans:300,400|Permanent+Marker|Raleway:300,400|Roboto:300,400,700|Source+Sans+Pro:300,400,700"
-		rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	 rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/fontawesome.min.css">
 	<link rel="stylesheet" href="/css/animate.min.css">
 	<link rel="stylesheet" href="/js/owl.carousel/dist/assets/owl.carousel.min.css" />
@@ -22,7 +24,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-2">
-						<a class="logo" href="/" title="Restaurang Smarrig"><img src="/img/logo-dark.png" alt="logo">Restaurang Smarrig</a>
+					<a class="logo" href="/" title="Restaurang Smarrig"><img src="/img/logo-dark.png" alt="logo">Restaurang Smarrig</a>
 				</div>
 				<div class="col-3">
 					<nav>
@@ -56,11 +58,11 @@
 	<main>
 		<section class="content-block section-bg-pic">
 			<section class="top-section light-layout">
-				<h1>Veckans lunch</h1>
+				<h1 class="heading"></h1>
 				<div class="container">
 					<div class="row">
-						<p class="large-style col-4">
-							Varje vecka serverar vi smarrig lunch som du kan beställa online eller äta på vår underbar restaurang!
+						<p class="large-style col-4 text-place">
+
 						</p>
 						<p class="day-name col-1 marker-style"></p>
 					</div>
@@ -75,13 +77,7 @@
 						<div class="col-4 align-middle">
 							<div class="lunch-menu">
 								<div class="col-1_2 lunch-list">
-									<!-- <ul>
-										<li><i class="fas fa-utensil-spoon"></i>Vegan pumpkin soup with onions</li>
-										<li><i class="fas fa-utensil-spoon"></i>Grillad fläskfilé med äppelsötad sås och krispig klyftad potatis</li>
-										<li><i class="fas fa-utensil-spoon"></i>Gräddig laxpanna med kantareller samt kokt potatis</li>
-									</ul> -->
-									<!-- <p><small>Dagens lunch kl. 11-14. Inkl sallad, smör, bröd, dryck, kaffe, kaka. Pris 85 kr</small></p> -->
-									<!-- <button class="btn" type="button">Beställa</button> -->
+									<!-- <button class="btn order-btn">Order</button> -->
 								</div>
 								<div class="col-1_2">
 									<div class="week-lunch-img owl-carousel owl-theme">
@@ -100,6 +96,30 @@
 			<p>&copy; Smarrig restaurang 2018</p>
 		</div>
 	</footer>
+	<div class="fade"></div>
+	<div class="modal">
+		<div class="container">
+			<div class="modal-inner">
+				<span class="close"><i class="fas fa-times"></i></span>
+				<h3>Modal heading</h3>
+				<form action="" method="POST" id="order-form">
+					<div class="form-group">
+						<label for="namef">Your name: </label>
+						<input type="text" id="namef" name="namef" placeholder="Enter your name" required>
+					</div>
+					<div class="form-group">
+							<label for="emailf">Your email: </label>
+							<input type="text" id="emailf" name="emailf" placeholder="Enter your name" required>
+						</div>
+						<p>Select meal to order:</p>
+					<div class="form-group"><input type="radio" name="select-meal" id="meal-1"><label for="meal-1">meal-1</label></div>
+					<div class="form-group"><input type="radio" name="select-meal" id="meal-2"><label for="meal-2">meal-2</label></div>
+					<div class="form-group"><input type="radio" name="select-meal" id="meal-3"><label for="meal-3">meal-3</label></div>
+
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/owl.carousel/dist/owl.carousel.min.js"></script>
 	<script src="/js/SmoothScroll.js"></script>
