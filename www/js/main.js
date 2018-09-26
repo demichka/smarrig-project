@@ -127,7 +127,7 @@ $(document).ready(function () {
                         .append($('<input type="radio" name="select-meal"/>').attr('id', title).attr('value', title))
                         .append($('<label/>')
                             .append(title).attr('for', title))
-                );
+                    );
             }
 
             let everyDay = weekLunch[0];
@@ -139,20 +139,30 @@ $(document).ready(function () {
                 $('.heading').append(everyDayInfo.title);
             }
 
+            let btn = $('<button class="btn order-btn">Order</button>');
+            btn.click(function () {
+                $('.modal').fadeIn();
+                $('.fade').fadeIn();
+            });
+
             runOwlCarousel();
             $('.lunch-list').append(ul);
             $('.lunch-list').append(pSmall);
+            $('.lunch-list').append(btn);
+            console.log('a', new Date());
+
         }
     }
 
 
     let orderBtn = $('.order-btn');
+    console.log('b', new Date());
     orderBtn.click(function () {
         $('.modal').fadeIn();
         $('.fade').fadeIn();
     });
 
-    
+
 
 
     function getOrder() {

@@ -194,7 +194,7 @@ a.logo {
     font-weight: 300;
 }
 .content-block {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 h1 {
@@ -459,11 +459,11 @@ hr {
     color: hsla(225, 95%, 100%, 1);
 }
 
-.order-btn {
+/* .order-btn {
     width: 200px;
     float: left;
     margin: 0 0 30px 15px;
-}
+} */
 .flex-grid {
     display: flex;
     flex-direction: row;
@@ -511,6 +511,10 @@ hr {
     border-radius: 4px;
     background-color: hsla(105, 40%, 26%, 1);
     color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     
 }
 
