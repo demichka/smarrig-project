@@ -71,13 +71,15 @@
 							<li class="switch-swedish on">Svenska</li>
 							<li class="switch-english off">English</li>
 						</ul>
+						<a class="show-whole-week-menu off">Visa hela veckans meny</a>
+						
 					</div>
 
 					<div class="row">
 						<div class="col-4 align-middle">
 							<div class="lunch-menu">
 								<div class="col-1_2 lunch-list">
-								
+
 								</div>
 								<div class="col-1_2">
 									<div class="week-lunch-img owl-carousel owl-theme">
@@ -85,7 +87,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 
 						</div>
 					</div>
@@ -104,22 +106,34 @@
 			<div class="modal-inner">
 				<span class="close"><i class="fas fa-times"></i></span>
 				<h3>Order your lunch here</h3>
-				<form  id="order-form" class="forms">
+				<form id="order-form" class="forms">
 					<div class="form-group">
 						<label for="namef">Your name: </label>
 						<input type="text" id="namef" name="namef" placeholder="Enter your name" required>
 					</div>
 					<div class="form-group">
-							<label for="emailf">Your email: </label>
-							<input type="text" id="emailf" name="emailf" placeholder="Enter your email" required>
-						</div>
-						<p>Select meal to order:</p>
-						<div class="meal-list-to-order">
+						<label for="emailf">Your email: </label>
+						<input type="text" id="emailf" name="emailf" placeholder="Enter your email" required>
+					</div>
+					<p>Select meal to order:</p>
+					<div class="meal-list-to-order">
 
-						</div>
+					</div>
+					<div>
 						<button type="button" class="btn" id="get-order-btn">Send</button>
 						<button type="reset" class="btn btn-close">Cancel</button>
+					</div>
+
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="whole-week-menu" style="display: none;">
+		<div class="container">
+			<div class="modal-inner">
+				<span class="close"><i class="fas fa-times"></i></span>
+				<h3>Whole week menu</h3>
+				<div class="whole-week-menu-list"></div>
 			</div>
 		</div>
 	</div>
@@ -127,7 +141,6 @@
 	<script src="/js/owl.carousel/dist/owl.carousel.min.js"></script>
 	<script src="/js/SmoothScroll.js"></script>
 	<script src="/js/main.js"></script>
-	<!-- <script src="/js/thomas-menu.js"></script> -->
 </body>
 
 </html>

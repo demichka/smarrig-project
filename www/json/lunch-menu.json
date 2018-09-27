@@ -1,12 +1,14 @@
 [{
-        "nameOfWeek": "whole-week",
+        
         "lang": {
             "sv": [{
+                "nameOfWeek": "Hela veckan",
                 "name": "Dagens lunch kl. 11-14. Inkl sallad, smör, bröd, dryck, kaffe, kaka. Pris 85 kr",
                 "text": "Varje dag serverar vi smarrig lunch som du kan beställa online eller äta på vår underbar restaurang!",
                 "title": "Veckans lunch"
             }],
             "en": [{
+                "nameOfWeek": "Whole week",
                 "name": "Daily lunch 11-14. Including salad, bread, soda, coffee, cookies. Price 85 SEK",
                 "text": "Every day we serve tasty lunch which you can order online or eat in our wonderful restaurant!",
                 "title": "Week's lunch"
@@ -15,9 +17,13 @@
     },
 
     {
-        "nameOfWeek": "monday",
+        
         "lang": {
-            "sv": [{
+            "sv": [
+                {
+                    "nameOfWeek": "Måndag"
+                },
+                {
                     "name": "Vegansk pumpa soup med lök",
                     "desc": "Vegansk pumpa soup med lök",
                     "image": "/img/image01.jpg"
@@ -35,7 +41,11 @@
                     "image": "/img/image03.jpg"
                 }
             ],
-            "en": [{
+            "en": [
+                {
+                    "nameOfWeek": "Monday"
+                },
+                {
                     "name": "Vegan pumpkin soup with onions",
                     "desc": "Vegan pumpkin soup with onions",
                     "image": "/img/image01.jpg"
@@ -57,39 +67,47 @@
     },
 
     {
-        "nameOfWeek": "tuesday",
+        
         "lang": {
-            "sv": [{
+            "sv": [
+                {
+                    "nameOfWeek": "Tisdag"
+                },
+                {
                     "name": "Strozzapreti med fläskkött",
-                    "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli.",
+                    "desc": "Strozzapreti med strimlat fläskkött, tomat och broccoli",
                     "image": "/img/image04.jpg"
                 },
                 {
                     "name": "Penne med zucchini",
-                    "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino.",
+                    "desc": "Penne med zucchini, paprika, aubergin, tomat, grädde och pecorino",
                     "image": "/img/image05.jpg"
 
                 },
                 {
                     "name": "Ugnsbakat Kalkonbröst",
-                    "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin.",
+                    "desc": "Ugnsbakat kalkonbröst som serveras med örtpotatis, sås på semitorkade tomater och vitt vin",
                     "image": "/img/image06.jpg"
 
                 }
             ],
-            "en": [{
+            "en": [
+                {
+                    "nameOfWeek": "Tuesday"
+                },
+                {
                     "name": "Strozzapreti with pork",
-                    "desc": "Strozzapreti med shredded pork, tomatoes and broccoli.",
+                    "desc": "Strozzapreti med shredded pork, tomatoes and broccoli",
                     "image": "/img/image04.jpg"
                 },
                 {
                     "name": "Penne with zucchini",
-                    "desc": "Penne with zucchini, paprika, aubergin, tomatoes, cream and pecorino.",
+                    "desc": "Penne with zucchini, paprika, aubergin, tomatoes, cream and pecorino",
                     "image": "/img/image05.jpg"
                 },
                 {
                     "name": "Baked turkey breast",
-                    "desc": "Baked turkey breast served with herb roested potatoes, and a sauce of semi dried tomates and white wine.",
+                    "desc": "Baked turkey breast served with herb roested potatoes, and a sauce of semi dried tomates and white wine",
                     "image": "/img/image06.jpg"
                 }
             ]
@@ -98,37 +116,45 @@
     },
 
     {
-        "nameOfWeek": "wednesday",
+        
         "lang": {
-            "sv": [{
+            "sv": [
+                {
+                    "nameOfWeek": "Onsdag"
+                },
+                {
                     "name": "Fusilli alla Bolognese",
-                    "desc": "Fusilli med köttfärssås (nötkött).",
+                    "desc": "Fusilli med köttfärssås (nötkött)",
                     "image": "/img/image07.jpg"
                 },
                 {
                     "name": "Basilikasedani",
-                    "desc": "Sedani med basilikapesto, haricots-verts och grädde.",
+                    "desc": "Sedani med basilikapesto, haricots-verts och grädde",
                     "image": "/img/image08.jpg"
                 },
                 {
                     "name": "Helstekt fläskfilé",
-                    "desc": "Helstekt fläskfilé, serveras med potatisgratäng, grönsaker och rödvinssås.",
+                    "desc": "Helstekt fläskfilé, serveras med potatisgratäng, grönsaker och rödvinssås",
                     "image": "/img/image09.jpg"
                 }
             ],
-            "en": [{
+            "en": [
+                {
+                    "nameOfWeek": "Wednesday"
+                },
+                {
                     "name": "Fusilli alla Bolognese",
                     "desc": "Fusilli with minced beef.",
                     "image": "/img/image07.jpg"
                 },
                 {
                     "name": "Basil sedani",
-                    "desc": "Sedani with basil peso, haricots-verts and cream.",
+                    "desc": "Sedani with basil peso, haricots-verts and cream",
                     "image": "/img/image08.jpg"
                 },
                 {
                     "name": "Fillet of pork",
-                    "desc": "Fillet of pork, served with potato gratin vegetables and a red wine sauce.",
+                    "desc": "Fillet of pork, served with potato gratin vegetables and a red wine sauce",
                     "image": "/img/image09.jpg"
                 }
             ]
@@ -136,38 +162,45 @@
     },
 
     {
-        "nameOfWeek": "thursday",
         "lang": {
-            "sv": [{
+            "sv": [
+                {
+                    "nameOfWeek": "Torsdag"
+                },
+                {
                     "name": "Cappelletti",
-                    "desc": "Cappelletti med pancetta, champinjon, tomat och grädde.",
+                    "desc": "Cappelletti med pancetta, champinjon, tomat och grädde",
                     "image": "/img/image01.jpg"
                 },
                 {
                     "name": "Purjolökspenne",
-                    "desc": "Penne med purjolök, broccoli, semitorkade tomater och vitvinssås.",
+                    "desc": "Penne med purjolök, broccoli, semitorkade tomater och vitvinssås",
                     "image": "/img/image02.jpg"
                 },
                 {
                     "name": "Dagens fisk",
-                    "desc": "Dagens fisk enligt tillgång.",
+                    "desc": "Dagens fisk enligt tillgång",
                     "image": "/img/image03.jpg"
                 }
             ],
-            "en": [{
+            "en": [
+                {
+                    "nameOfWeek": "Thursday"
+                },
+                {
                     "name": "Cappelletti",
-                    "desc": "Cappelletti served with pancetta, mushrooms, tomatoes and cream.",
+                    "desc": "Cappelletti served with pancetta, mushrooms, tomatoes and cream",
                     "image": "/img/image01.jpg"
                 },
                 {
                     "name": "Penne with leeks",
-                    "desc": "Penne with leeks, broccoli, semi dried tomatoes and a white wine sauce.",
+                    "desc": "Penne with leeks, broccoli, semi dried tomatoes and a white wine sauce",
                     "image": "/img/image02.jpg"
 
                 },
                 {
                     "name": "Today's Catch",
-                    "desc": "Fish from the local market, depending on supply.",
+                    "desc": "Fish from the local market, depending on supply",
                     "image": "/img/image03.jpg"
                 }
             ]
@@ -177,25 +210,33 @@
     {
         "nameOfWeek": "friday",
         "lang": {
-            "sv": [{
+            "sv": [
+                {
+                    "nameOfWeek": "Fredag"
+                },
+                {
                     "name": "Rigatoni alla Norma",
-                    "desc": "Rigatoni alla Norma – med aubergin, tomat, basilika och ricottasallad.",
+                    "desc": "Rigatoni alla Norma – med aubergin, tomat, basilika och ricottasallad",
                     "image": "/img/image04.jpg"
                 },
                 {
                     "name": "Kycklingstrozzapreti",
-                    "desc": "Strozzapreti med kyckling, tomat, pesto och grädde.",
+                    "desc": "Strozzapreti med kyckling, tomat, pesto och grädde",
                     "image": "/img/image05.jpg"
                 },
                 {
                     "name": "Lammfärsbiffar",
-                    "desc": "Lammfärsbiffar med bakade rotfrukter, linser och timjansky.",
+                    "desc": "Lammfärsbiffar med bakade rotfrukter, linser och timjansky",
                     "image": "/img/image06.jpg"
                 }
             ],
-            "en": [{
+            "en": [
+                {
+                    "nameOfWeek": "Friday"
+                },
+                {
                     "name": "Rigatoni alla Norma",
-                    "desc": "Rigatoni alla Norma – with aubergine, tomatoes, basil och a ricotta salad.",
+                    "desc": "Rigatoni alla Norma – with aubergine, tomatoes, basil och a ricotta salad",
                     "image": "/img/image04.jpg"
                 },
                 {
@@ -205,7 +246,7 @@
                 },
                 {
                     "name": "Minced mutton beefs",
-                    "desc": "Minced mutton beefs with baked root vegetables, lentils och thyme gravy.",
+                    "desc": "Minced mutton beefs with baked root vegetables, lentils och thyme gravy",
                     "image": "/img/image06.jpg"
                 }
             ]

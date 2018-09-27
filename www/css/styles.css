@@ -13,7 +13,9 @@ a, a:visited {
     color: hsla(153, 87%, 27%, 1);
 }
 
-
+a {
+    outline: none;
+}
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
@@ -302,6 +304,7 @@ footer p {
 @media screen and (max-width:1024px) {
     h1 {
         font-size: 2.1rem;
+        margin-top: 50px;
     }
     .col-1_2 {
         width: 100%;
@@ -386,15 +389,7 @@ footer p {
 }
 
 .lunch-menu {
-    /* display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center; */
     padding: 50px 15px;
-    position: relative;
 }
 
 
@@ -502,9 +497,12 @@ hr {
     bottom: 0px;
 }
 
+.switch-lang {
+    display: inline-block;
+}
 
-
-.switch-lang li {
+.switch-lang li,
+.show-whole-week-menu {
     display: inline-block;
     padding: 5px 10px;
     margin: 0px 5px;
@@ -515,10 +513,17 @@ hr {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
+    cursor: pointer;
 }
 
-.switch-lang li.off {
+.show-whole-week-menu {
+    background-color: hsla(105, 70%, 36%, 1);
+}
+
+.show-whole-week-menu:hover {
+    background-color: hsla(105, 70%, 26%, 1);
+}
+.switch-lang li.off{
     background-color: #666;
     cursor: pointer;
 }
@@ -527,7 +532,8 @@ hr {
     background-color: #555;
 }
 
-.switch-lang li.on {
+.switch-lang li.on,
+.show-whole-week-menu.on{
     background-color: hsla(153, 87%, 27%, 1);
     cursor: default;
 }
@@ -545,6 +551,14 @@ hr {
     padding: 15px;
 }
 
+.modal h3 {
+    font-size: 1.5rem;
+}
+
+.modal strong {
+    font-weight: 700;
+    color: hsla(153, 87%, 27%, 1);
+}
 .close {
     position: absolute;
     right: 0px;
@@ -606,4 +620,33 @@ hr {
     border: 1px solid hsla(105, 40%, 46%, 1);
     outline: none;
     box-shadow: none;
+}
+
+.invalid-input {
+    display: inline-block;
+    background: #ff0000;
+    color: #fff;
+    font-size: .875rem;
+    padding: 3px 15px;
+    text-align: center; 
+    border-radius: 3px;
+    line-height: 30px;
+    white-space: nowrap;
+    margin-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.whole-week-menu-list dt {
+    font-size: 1.125rem;
+    color: hsla(153, 87%, 27%, 1);
+    margin: 25px 0 5px 0;
+}
+
+.whole-week-menu-list dd {
+    text-indent: 15px;
+    margin-bottom: 5px;
 }
