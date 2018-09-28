@@ -23,3 +23,5 @@ Open [localhost:3000](http://localhost:3000/) and enjoy testing =)
 Week's menu output depends on day of week. Thereby if "Veckans lunch" page is opened on workdays, menu of a day will be opened. 
 Restaurant doesn't serve week's lunch on weeked, so message about it is shown if this page is opened on weekend.
 
+##If you want to test it on weekend, you have to change manually your system date to workday. Don't forget to change it back.
+
