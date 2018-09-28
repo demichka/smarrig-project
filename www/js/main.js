@@ -102,7 +102,6 @@ $(document).ready(function () {
             checkWeekend();
         });
 
-
         function checkWeekend(l) {
             l = lang;
             carousel.trigger('destroy.owl.carousel');
@@ -122,9 +121,6 @@ $(document).ready(function () {
                 $('.lunch-menu').append(weekendMessage);
             }
         }
-
-
-
 
         function checkingLanguage() {
             if (switchSwedish.hasClass('on')) {
@@ -177,15 +173,10 @@ $(document).ready(function () {
                 $('.fade').fadeIn();
             });
 
-
-
-
             runOwlCarousel();
             $('.lunch-list').append(ul);
             $('.lunch-list').append(pSmall);
             $('.lunch-list').append(btn);
-
-
         }
 
         function showWholeWeekMenu(l) {
@@ -205,13 +196,9 @@ $(document).ready(function () {
                     dd.append(meal.name);
                     dd.insertAfter(dt);
                 }
-
             }
-
             $('.whole-week-menu-list').append(dl);
-
         }
-
 
         btnShowWholeWeekMenu.click(function () {
             $('#whole-week-menu').fadeIn();
@@ -231,12 +218,7 @@ $(document).ready(function () {
                 wholeMenuHeading.append('Whole week\'s menu');
             }
         }
-
-
-
-
     }
-
 
     $('#get-order-btn').click(getOrder);
 
@@ -257,8 +239,6 @@ $(document).ready(function () {
         return result.test(String(email).toLowerCase());
     }
 
-
-
     function validateForm(orderData) {
         let validName = orderData.name.length >= 2;
         let validEmail = validateEmail(orderData);
@@ -267,8 +247,6 @@ $(document).ready(function () {
         let errorName = $('<span class="invalid-input error-name">Enter your name please!</span>');
         let errorEmail = $('<span class="invalid-input error-email">Enter valid email please!</span>');
         let errorMeal = $('<span class="invalid-input error-meal">Choose at least one meal please!</span>');
-
-
 
         $('.invalid-input').remove();
 
@@ -301,49 +279,42 @@ $(document).ready(function () {
         }
     }
 
-
-
-
-
-    $('.close').click(function () {
-        $(this).parents('.modal').fadeOut();
+    function closeModal(btn) {
+        btn = $(this);
+        let parent = btn.parents('.modal');
+        if (parent) {
+            parent.fadeOut();
+        } else {
+            btn.fadeOut();
+        }
         $('.fade').fadeOut();
-        $('.invalid-input').remove();
-        $('form')[0].reset();
-    });
-
-    $('.fade').click(function () {
-        $(this).fadeOut();
         $('.modal').fadeOut();
         $('.invalid-input').remove();
         $('form')[0].reset();
-    });
+        $('#modal-answer').remove();
+    }
 
-    $('.btn:reset').click(function () {
-        $(this).parents('.modal').fadeOut();
-        $('.invalid-input').remove();
-        $('.fade').fadeOut();
-    });
+    const closeBtn = $('.close');
+    const fadeLayout = $('.fade');
+    const resetBtn = $('.btn:reset');
 
 
+    closeBtn.on('click', closeModal);
+    fadeLayout.on('click', closeModal);
+    resetBtn.on('click', closeModal);
 
     function showOrder(orderSummary) {
         let summarizeP = $('<p/>');
         summarizeP.append(
             'Hej, ' + '<strong>' + orderSummary.name + '</strong>' + '!' +
-            '<br/>' + 'We send your order to ' + '<strong>' + orderSummary.email + '</strong>' + '.' +
+            '<br/>' + 'We send your order\'s description to ' + '<strong>' + orderSummary.email + '</strong>' + '.' +
             '<br/>' + 'You ordered ' + '<strong>' + orderSummary.meal + '</strong>' + ',' +
             '<br/>' + 'By the way, you will eat ' + '<strong>' + orderSummary.desc + '</strong>' + ',' +
-            '<br/>' + 'Pick it up and enjoy your lunch!');
+            '<br/>' + 'Pick it up today from 11 till 14 and enjoy your lunch!');
         $('#form-modal').fadeOut();
         let modalSum = $('<div class="modal" id="modal-answer"><div class="container"><div class="modal-inner"><span class="close"><i class="fas fa-times"></i></span><h3>Yeepi! You\'ve just ordered!</h3></div></div></div>');
         $('body').append(modalSum);
         $('#modal-answer').append(summarizeP);
-        $('.close').click(function () {
-            $(this).parents('.modal').fadeOut();
-            $('.fade').fadeOut();
-            $('form')[0].reset();
-            $('#modal-answer').remove();
-        });
+        $('.close').on('click', closeModal);
     }
 });
