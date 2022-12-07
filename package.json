@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.7.0",
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "jquery": "^3.4.0",
     "owl.carousel": "^2.3.4",
     "smoothscroll-for-websites": "^1.4.6"
